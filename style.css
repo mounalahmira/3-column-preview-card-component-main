@@ -23,22 +23,29 @@ body{
 }
 
 .container{
-
+    border-radius: 8px;
+    overflow: hidden;
     display: flex;
-
+    width: 65%;
 }
 .card{
     color: white;
     padding: 35px;
-    width: 300px;
+    /* min-width: 270px; */
     height: 100%;
+    
 }
 
 .card h2{
+    font-size: 24px;
     margin: 35px 0;
     font-family: "Big Shoulders", sans-serif;
     letter-spacing: 0.1rem;
     text-transform:uppercase;
+}
+.card p{
+    letter-spacing: 1.9;
+    font-size: 15px;
 }
 .card button{
     /* font-family: "Big Shoulders", sans-serif; */
@@ -66,4 +73,12 @@ body{
 }
 .card3 button{
     color: var(--Green);  
+}
+
+@media (max-width:650px) {
+    .container{
+        flex-direction: column;
+        margin: 4rem 0;
+        width: 85%;
+    }
 }
